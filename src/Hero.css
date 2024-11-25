@@ -1,0 +1,195 @@
+/* Global Styling */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #fdfdfd;
+  }
+  
+  .App {
+    text-align: center;
+    
+  }
+
+  .header{
+    margin:1% 5%;
+      }
+    
+      .logo{
+        width:80px;
+        height:80px;
+        position: relative;
+        display: inline-block,
+      }
+      .logo img{
+        display: block;
+      }
+      .logo svg{
+        position: absolute;
+        bottom: 17px;
+        right: 5px;
+        width: 25px;
+      }
+  
+  /* Header Styles */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #6b4ce6;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+    padding-left: 40px;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+  }
+  
+  .header-button {
+    background-color: #6b4ce6;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  /* Hero Section */
+  .hero {
+    padding: 40px;
+    background-color: #f4f0fc;
+  }
+  
+  .hero-content {
+        width:70%;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.5rem;
+    color: #333;
+  }
+  
+  .hero-content h1 span {
+    color: #6b4ce6;
+    font-weight: bold;
+  }
+  
+  .hero-content p {
+    margin: 20px 0;
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .explore-button {
+    background-color: #6b4ce6;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+
+
+  .image-grid-container {
+    width: 100%;
+    overflow: hidden; /* Ensure the grid stays within bounds */
+    position: relative;
+    margin:20px;
+  }
+  
+  .image-grid {
+    display: flex;
+    animation: slide 10s linear infinite; /* Infinite horizontal animation */
+  }
+  
+  .grid-image {
+    display: flex;
+    width: 150px; /* Adjust image size as needed */
+    height: 150px;
+    margin: 0 10px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  /* Keyframes for the horizontal slide */
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+.spinner-wheel {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%; /* Make it circular */
+  background: conic-gradient(
+    #f4e4fc 0deg 45deg,
+    #f0d8fa 45deg 90deg,
+    #e5ccf7 90deg 135deg,
+    #dac0f4 135deg 180deg,
+    #c4a5ee 180deg 225deg,
+    #b390e9 225deg 270deg,
+    #a47de5 270deg 315deg,
+    #9570e1 315deg 360deg
+  ); /* Divide the wheel into 8 equal sections */
+  animation: spin 3s linear infinite; /* Rotate animation */
+}
+.content{
+    display: flex;
+    width:100%;
+}
+/* Keyframes for rotation */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+.spinner_1{
+    width: 15%;
+    position: relative;
+    right: 10%;
+}
+.spinner_1 svg{
+    width: 200px;
+    height:150px;
+}
+
+.spinner_2{
+    width: 15%;
+    position: relative;
+    bottom: -100px;
+    left: 5%;
+}
+
+.spinner_2 svg{
+    width: 300px;
+    height:200px;
+}
